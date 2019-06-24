@@ -1,0 +1,166 @@
+/** 
+ *  Charts
+ */
+ 
+ .charts {
+    width: 70%;
+    overflow: visible;
+    padding: 0px;
+    -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+    transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+
+    //background: lighten($secondary, 30%);
+    .header {
+        position: relative;
+        border-bottom: 1px solid lighten($bg-color, 80%);
+        text-align: left;
+        padding: 13px 10px 13px 10px;
+        font-weight: 600;
+        color: $bg-color;
+
+        span {
+            font-size: 14px;
+            //border-right: 1px solid #eee;
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+
+
+        .tipt {
+            padding: 6px 10px;
+            background: $primary;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            opacity: 0;
+            pointer-events: none;
+            width: 80px;
+            font-weight: 600;
+            font-size: 10px;
+            border-radius: 1px;
+            text-transform: uppercase;
+            color: $bg-color;
+            position: absolute;
+            text-align: center;
+            margin-left: -35px;
+            bottom: -25px;
+            z-index: 3000;
+        }
+
+        .icon-block-square {
+            opacity: 0.8;
+        }
+
+        .icon-block-square:hover {
+            opacity: 1;
+        }
+
+        .icon-block-square:hover .tipt {
+            opacity: 1;
+        }
+
+        .exports {
+
+            .size {
+                width: 45px;
+                height: 100%;
+                padding: 5px 8px;
+                margin: 0px 2px;
+                border: 0px;
+                border-bottom: 1px solid lighten($bg-color, 50%);
+            }
+
+            .field {
+                margin-right: 10px;
+            }
+
+            span {
+                font-size: 14px;
+                padding-right: 0px;
+                margin-right: 14px;
+            }
+
+            .field select {
+                padding: 5px 8px;
+                border: none;
+                border-bottom: 1px solid lighten($bg-color, 50%);
+                box-shadow: none;
+                background: transparent;
+                background-image: none;
+                -webkit-appearance: none;
+            }
+
+            .field select:focus {
+                outline: none;
+            }
+
+            .btn-export {
+                //border-bottom: 1px solid lighten($bg-color, 50%);            
+                padding: 2px 10px 2px 10px;
+                font-size: 14px;
+                cursor: pointer;
+                background: $primary;
+                color: #fff;
+            }
+
+            .btn-export:hover {
+                opacity: 0.8;
+            }
+
+            .btn-export:hover>span {
+                float: right;
+            }
+
+            @media screen and (max-width: $break-tablet) {
+                // $break-mobile: 320px;
+                text-align: center;
+                margin-bottom: 20px;
+                overflow: auto;
+                border-bottom: 1px solid lighten($bg-color, 50%);
+
+                .field {
+                    display: block;
+                    width: 100%;
+                    margin: 0px auto 10px auto;
+                }
+
+                .size {
+                    width: 45%;
+                }
+
+                .field select {
+                    width: 100%;
+                }
+
+                .btn-export {
+                    width: 100%;
+                }
+
+                .right-arrow-icon {
+                    transform: rotate(90deg);
+                    margin-left: 46%;
+                }
+            }
+
+        }
+
+
+
+        @media screen and (max-width: $break-min-desktop) {
+
+            // $break-mobile: 320px;
+            .chart-types {
+                float: left;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: $break-min-desktop) {
+        width: 100%;
+    }
+
+    .chart-inner {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}

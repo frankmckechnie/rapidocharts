@@ -1,0 +1,38 @@
+/** 
+ *  Nav
+ */
+
+
+.nav {
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0px;
+    color: $text-on-dark;
+    overflow: hidden;
+
+    .nav-right {
+        height: inherit;
+        overflow: hidden;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            height: inherit;
+        }
+
+        ul li {
+            padding: 0px;
+            margin: 0px 0px 0px 15px;
+            float: left;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            color: #FFE0AE;
+        }
+    }
+}

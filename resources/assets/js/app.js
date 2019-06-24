@@ -7,16 +7,19 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import App from './App.vue'
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+import './mixins/polyfill'
+import jscolor from 'jscolor'
+import Chart from 'chart.js';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.config.productionTip = false
 
-const app = new Vue({
-    el: '#app'
+new Vue({
+  el: '#rapido',
+  components: { App },
+  template: '<App/>'
 });
