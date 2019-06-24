@@ -6,7 +6,7 @@
 
 </head>
 <body>
-    <div class="container rela-block">
+    <div id="rapido" class="container rela-block">
         @yield('content')
     </div>
 

@@ -3771,7 +3771,12 @@ body::after {
   cursor: pointer;
 }
 
-.nav .nav-right ul li:hover {
+.nav .nav-right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .nav-right ul li a:hover {
   color: #FFE0AE;
 }
 

@@ -8,8 +8,8 @@
     <section class="nav">
       <div class="nav-right">
         <ul class="pull-right">
-          <li>Sign-up</li>
-          <li>Login</li>
+          <li><a href='/register'>Sign-up</a></li>
+          <li><a href='/login'>Login</a></li>
         </ul>
       </div>
     </section>

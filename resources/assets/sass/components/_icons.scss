@@ -2,18 +2,19 @@
  *  ICONS
  */
 
-.icon-block{
+.icon-block {
     display: block;
     width: 16px;
     height: 16px;
     cursor: pointer;
     position: relative;
-    &:hover{
-      opacity: 0.5;
+
+    &:hover {
+        opacity: 0.5;
     }
-  }
-  
-  .icon-block-square{
+}
+
+.icon-block-square {
     display: block;
     width: 20px;
     height: 20px;
@@ -21,66 +22,85 @@
     //border-bottom: 1px solid;
     padding: 2px;
     box-sizing: content-box;
-    &:hover{
-      opacity: 0.5;
+
+    &:hover {
+        opacity: 0.5;
     }
-  }
-  
-  .bar-chart-icon {background-image: url('../icons/bar-chart-icon.svg')}
-  
-  .radar-icon {background-image: url('../icons/radar-icon.svg')}
-  
-  .doughnut-icon {background-image: url('../icons/doughnut-icon.svg')}
-  
-  .line-chart-icon {background-image: url('../icons/line-chart-icon.svg')}
-  
-  .pie-chart-icon{background-image: url('../icons/pie-chart-icon.svg')}
-  
-  .down-icon{background-image: url('../icons/down-icon.svg')}
-  
-  .right-arrow-icon{background-image: url('../icons/right-arrow.svg')}
-  
-  .up-icon{
+}
+
+.bar-chart-icon {
+    background-image: url('../icons/bar-chart-icon.svg')
+}
+
+.radar-icon {
+    background-image: url('../icons/radar-icon.svg')
+}
+
+.doughnut-icon {
+    background-image: url('../icons/doughnut-icon.svg')
+}
+
+.line-chart-icon {
+    background-image: url('../icons/line-chart-icon.svg')
+}
+
+.pie-chart-icon {
+    background-image: url('../icons/pie-chart-icon.svg')
+}
+
+.down-icon {
+    background-image: url('../icons/down-icon.svg')
+}
+
+.right-arrow-icon {
+    background-image: url('../icons/right-arrow.svg')
+}
+
+.up-icon {
     background-image: url('../icons/down-icon.svg');
     transform: rotate(180deg);
     -webkit-transition: 0.5s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
     transition: 0.5s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
-  }
-  
-  .code-icon {
+}
+
+.code-icon {
     background-image: url('../icons/code-icon.svg')
-  }
-  
-  .x-icon{
+}
+
+.x-icon {
     background-image: url('../icons/x-icon.svg')
-  }
-  
-  .plus-icon {
-    background-image: url('../icons/plus-icon.svg')}
-  
-  .small-icon{
-      background-position: center center;
-      background-size: 35%; 
-      background-repeat: no-repeat;
-  }
-  .sm-icon{
+}
+
+.plus-icon {
+    background-image: url('../icons/plus-icon.svg')
+}
+
+.small-icon {
     background-position: center center;
-      background-size: 40%; 
+    background-size: 35%;
     background-repeat: no-repeat;
-  }
-  .medium-icon{
-      background-position: center center;
-      background-size: 50%; 
-      background-repeat: no-repeat;
-  }
-  .ml-icon{
-      background-position: center center;
-      background-size: 67%; 
-      background-repeat: no-repeat;
-  }
-  .large-icon{
+}
+
+.sm-icon {
     background-position: center center;
-    background-size: contain; 
+    background-size: 40%;
     background-repeat: no-repeat;
-  }
-  
+}
+
+.medium-icon {
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.ml-icon {
+    background-position: center center;
+    background-size: 67%;
+    background-repeat: no-repeat;
+}
+
+.large-icon {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

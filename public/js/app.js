@@ -89313,9 +89313,11 @@ var staticRenderFns = [
     return _c("section", { staticClass: "nav" }, [
       _c("div", { staticClass: "nav-right" }, [
         _c("ul", { staticClass: "pull-right" }, [
-          _c("li", [_vm._v("Sign-up")]),
+          _c("li", [
+            _c("a", { attrs: { href: "/register" } }, [_vm._v("Sign-up")])
+          ]),
           _vm._v(" "),
-          _c("li", [_vm._v("Login")])
+          _c("li", [_c("a", { attrs: { href: "/login" } }, [_vm._v("Login")])])
         ])
       ])
     ])
