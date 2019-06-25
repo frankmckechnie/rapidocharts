@@ -4302,6 +4302,21 @@ body::after {
           box-sizing: border-box;
 }
 
+.color-input {
+  width: 50px;
+  height: 20px;
+  margin-top: 4px;
+  margin-right: 5px;
+  float: left;
+  border: 1px solid #a8a8a8;
+}
+
+@media screen and (max-width: 630px) {
+  .color-input {
+    width: 100%;
+  }
+}
+
 /** 
  *  ICONS
  */
@@ -4408,20 +4423,5 @@ body::after {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.color-input {
-  width: 50px;
-  height: 20px;
-  margin-top: 4px;
-  margin-right: 5px;
-  float: left;
-  border: 1px solid #a8a8a8;
-}
-
-@media screen and (max-width: 630px) {
-  .color-input {
-    width: 100%;
-  }
 }
 
