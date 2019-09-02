@@ -5,7 +5,7 @@
     <imgExports :type="dynamicComponent"></imgExports>
 
     <div class="chart-types">
-      <div class="icon-block-square ml-icon pull-right" @click="switchComp(type)" :class="type+'-icon'" v-for="type in types">
+      <div class="icon-block-square ml-icon pull-right" @click="switchComp(type)" v-bind:key="index" :class="type+'-icon'" v-for="(type, index) in types">
         <div class="tipt">{{type}}</div>
       </div>
       <span class="pull-right">Charts</span>

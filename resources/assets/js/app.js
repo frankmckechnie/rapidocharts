@@ -16,10 +16,22 @@ import './mixins/polyfill'
 import jscolor from 'jscolor'
 import Chart from 'chart.js';
 
+import global from './components/global.js';
+
 Vue.config.productionTip = false
 
-new Vue({
-  el: '#rapido',
-  components: { App },
-  template: '<App/>'
-});
+const rootElm = document.getElementById('rapido');
+
+if(rootElm){
+  new Vue({
+    el: '#rapido',
+    components: { App },
+    template: '<App/>'
+  });
+}else{
+  new Vue({
+    el: '#app'
+  });
+}
+
+

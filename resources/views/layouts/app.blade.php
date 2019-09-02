@@ -6,11 +6,11 @@
 
 </head>
 <body>
-    <div class="container rela-block">
+    <div id='app' class="page-layout">
+    
         @yield('content')
+    
+        @include('partials.footer')
     </div>
-
-    @include('partials.footer')
-
 </body>
 </html>

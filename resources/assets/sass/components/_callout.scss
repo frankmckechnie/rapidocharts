@@ -62,4 +62,15 @@
         margin-right: -120px;
         top: 45px;
     }
+
+    &--container{
+        @include container();
+    }
+
+    &--medium{
+        margin-top: 40px;
+        .logo{
+            background-size: 35%;
+        }
+    }
 }

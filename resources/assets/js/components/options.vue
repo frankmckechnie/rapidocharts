@@ -9,7 +9,7 @@
 
       <div class="tab-nav">   
          <ul>  
-            <li  v-for="(tab, index) in tabs"   @click="selectedTab = index"  :class="{ 'active': selectedTab == index }" class="">{{tab }}</li>
+            <li  v-for="(tab, index) in tabs" :key='index'  @click="selectedTab = index"  :class="{ 'active': selectedTab == index }" class="">{{tab }}</li>
             <hr />
         </ul> 
       </div>
@@ -17,10 +17,10 @@
       <div v-show="selectedTab == 0 " >
 
         <ul class="tab-clicks animated fadeInLeft" :class="{'active': showMenu == 'up-icon'}">
-          <li @click="selectedCategory = index"  v-for="(field, index) in fields" :class="{ 'active': selectedCategory == index }">{{index}}</li>
+          <li @click="selectedCategory = index" :key='index'  v-for="(field, index) in fields" :class="{ 'active': selectedCategory == index }">{{index}}</li>
           <li @click="$emit('add-data')" class="plus-icon small-icon"></li>
         </ul>
-        <data-set class="animated fadeIn" v-show="selectedCategory == index " v-for="(field, index) in fields" v-on:update-field="updateField" v-on:delete="deleteSet" :field="field" :version="index" ></data-set>
+        <data-set class="animated fadeIn" v-show="selectedCategory == index" :key='index' v-for="(field, index) in fields" v-on:update-field="updateField" v-on:delete="deleteSet" :field="field" :version="index" ></data-set>
       </div>
 
 

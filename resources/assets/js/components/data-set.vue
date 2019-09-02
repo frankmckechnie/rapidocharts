@@ -13,7 +13,7 @@
       <div class="field-block">
         <label>Colors<span v-show="isNumeric(dataSet)" class="pull-right">{{this.field.data.length + " items"}}</span> <span class="error">{{texareaError}}</span></label>
         <div style="width: 100%">
-          <color v-for="item in this.field.data.length" :colors="field.backgroundColor" :version="version" v-on:update-field="updateColors" :item="item"></color>
+          <color v-bind:key="index" v-for="(item, index) in this.field.data.length" :colors="field.backgroundColor" :version="version" v-on:update-field="updateColors" :item="item"></color>
         </div>
         <label @click="activeLink = (activeLink) ? false : true; updateColors()" :class="{ 'active': activeLink }" class="btn-label">linked colors</label>
       </div>

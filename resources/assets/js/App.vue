@@ -1,18 +1,12 @@
 <template>
   <div id="rapido" class="container rela-block">
     
-    <div class="callout">
-     <div class="logo"></div>
-    </div>
+    <callout></callout>
     
-    <section class="nav">
-      <div class="nav-right">
-        <ul class="pull-right">
-          <li><a href='/register'>Sign-up</a></li>
-          <li><a href='/login'>Login</a></li>
-        </ul>
-      </div>
-    </section>
+    <navigation>
+        <li><a href='/register'>Sign-up</a></li>
+        <li><a href='/login'>Login</a></li>
+    </navigation>
 
     <section class="content drop-level-1">
       <div class="options pull-left ">
@@ -32,6 +26,7 @@
 
 <script>
 
+import callout from './components/layout/callout';
 import options from './components/options'
 import chartElement from './components/chart-element'
 import editor from './components/editor'
@@ -41,7 +36,8 @@ export default {
   components: {
     options,
     chartElement,
-    editor
+    editor,
+    callout
   },
   data: function(){
     return{

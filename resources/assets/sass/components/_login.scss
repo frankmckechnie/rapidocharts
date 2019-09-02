@@ -1,0 +1,29 @@
+/** 
+ *  Login 
+ */
+
+.login {
+
+
+    .login-container {
+        @include container();
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        padding: 80px;
+    }
+
+    &__wrapper{
+        background-color: #fff;
+        flex: 1;
+        flex-basis: 25%;
+        padding: 20px;
+    }
+
+    &__heading {
+        color: #000;
+        text-align: left;
+    }
+
+}

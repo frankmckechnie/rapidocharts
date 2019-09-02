@@ -10,7 +10,7 @@
       <div class="pull-left field">
         <span class="icon-block-square ml-icon right-arrow-icon pull-left"></span>
         <select @change="selected = $event.target.value">
-          <option v-for="imgExport in imgExports" >{{imgExport}}</option>
+          <option :key='index' v-for="(imgExport, index) in imgExports" >{{imgExport}}</option>
         </select>
       </div>
 
