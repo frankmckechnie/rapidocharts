@@ -7,10 +7,10 @@
 </head>
 <body>
     <div id='app' class="page-layout">
-    
         @yield('content')
-    
-        @include('partials.footer')
     </div>
+
+    @include('partials.footer')
+
 </body>
 </html>

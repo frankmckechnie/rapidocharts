@@ -1,0 +1,81 @@
+/**
+*
+* Buttons
+*
+**/
+
+// global colors
+$bg-color: #282828;
+//$bg-color: #3C404D;
+
+$content: #fff;
+
+$primary: #FCD577;
+$secondary: #1a1b1a;
+$third: #282828;
+
+$text-on-dark: #fff;
+$text-on-light: $secondary;
+
+
+.btn{
+
+    font-size: 1.4rem;
+    height: 2.4em;
+    line-height: 2.4em;
+
+    color: $primary;
+    background-color: $secondary;
+
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+
+    white-space: nowrap;
+    overflow: hidden;
+    
+    padding: 0 18px;
+
+    border: 1px solid transparent;
+
+    -ms-transition: border 0.2s ease-in-out 0s, box-shadow 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s;
+    transition: border 0.2s ease-in-out 0s, box-shadow 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s;
+    -ms-transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+
+    @include noSelect;
+
+    &:hover{
+        color: $primary;
+        opacity: 0.9;
+        background-color:  $secondary;
+    }
+
+    &--full{
+        width: 100%;
+    }
+
+    &--small{    
+        padding: 0 18px;
+        margin-right: 18px;
+    }
+
+    &--small-text{
+        font-size: 1em;
+    }
+
+    &--inverse{
+        color: $secondary;
+        background-color: $primary;
+    }
+
+    &--link{
+        background: transparent;
+        &:hover{
+            background: transparent;
+            opacity: 0.5;
+        }
+    }
+}

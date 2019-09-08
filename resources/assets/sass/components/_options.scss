@@ -94,8 +94,7 @@
         padding: 15px 10px;
         color: $bg-color;
         background: #FCD577;
-        font-size: 18px;
-        font: inherit;
+        font-size: 1.1em;
         vertical-align: baseline;
         font-weight: bold;
         letter-spacing: inherit;
@@ -113,7 +112,7 @@
         li {
             float: left;
             color: $text-on-dark;
-            font-size: 16px;
+            font-size: 1em;
             text-align: center;
             font-weight: normal;
             padding: 15px 10px 3px 10px;
@@ -203,7 +202,7 @@
                 border: 0px solid #6b6a6a;
                 color: lighten($bg-color, 100%);
                 background: darken($bg-color, 3%);
-                font-size: 16px;
+                font-size: 1em;
                 resize: vertical;
                 font-family: arial;
             }
@@ -227,7 +226,7 @@
 
             label {
                 display: block;
-                font-size: 14px;
+                font-size: 0.85em;
                 font-weight: 400;
                 color: lighten($bg-color, 25%);
                 margin: 0px 0px;
@@ -246,7 +245,7 @@
             }
 
             .btn-label {
-                font-size: 12px;
+                font-size: 0.6em;
                 border: 1px solid $bg-color;
                 padding: 0px 5px;
                 margin: 10px 0px 0px 0px;

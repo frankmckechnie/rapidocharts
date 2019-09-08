@@ -3,3 +3,63 @@
  */
  
  
+.form {
+  
+    &__group{
+      width: 100%;
+      position: relative;
+    }
+    
+    &__label{
+      color: $text-on-dark;
+      font-weight: 500;
+      display: block;
+      max-width: 635px;
+      padding-bottom: 12px;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+    
+    &__field{
+      color: $text-on-dark;
+      font-size: 1.7rem;
+      line-height: 20px;
+      display: inline-block;
+      padding: 0 8px;
+      margin-bottom: 24px;
+      vertical-align: middle;
+      min-width: 50px;
+      max-width: 635px;
+      width: 100%;
+      min-height: 36px;
+      background-color: transparent;
+     // border: 0px;
+      border: 1px solid $primary;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+      
+      &:focus {
+        outline: none;
+        border: 1px solid #fff;
+        box-shadow: inset 0 0 0 1px rgba(252, 213, 118, 0.3);
+      }
+
+      &--big{
+          padding: 0 15px;
+          min-height: 52px;
+      }
+
+
+    }
+
+    &__group{
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__checkbox{
+        padding-bottom: 15px;
+    }
+  }
