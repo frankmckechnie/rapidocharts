@@ -3947,6 +3947,7 @@ body::after {
 
 .callout {
   width: 100%;
+  position: relative;
   margin-bottom: 0px;
   position: relative;
   overflow: auto;
@@ -3955,11 +3956,11 @@ body::after {
   transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 }
 
-.callout .logo {
+.callout__logo {
   background: url(/fonts/logo.svg?c3b76ecb57cb57fe97cd98a595302b93) no-repeat;
 }
 
-.callout .logo {
+.callout__logo {
   position: absolute;
   left: 0;
   right: 0;
@@ -3973,21 +3974,29 @@ body::after {
 }
 
 @media screen and (max-width: 1300px) {
-  .callout .logo {
+  .callout__logo {
     background-size: 70%;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .callout .logo {
+  .callout__logo {
     background-size: 100%;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .callout .logo {
+  .callout__logo {
     background-size: 120%;
   }
+}
+
+.callout__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .callout .text-left,
@@ -4059,7 +4068,7 @@ body::after {
   margin-top: 40px;
 }
 
-.callout--medium .logo {
+.callout--medium .callout__logo {
   background-size: 35%;
 }
 
@@ -4674,7 +4683,6 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 80px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -4707,9 +4715,8 @@ body::after {
 
 .login__wrapper {
   max-width: 480px;
+  width: 100%;
   padding: 0px 20px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
 .login__heading {
@@ -4717,7 +4724,16 @@ body::after {
   text-align: center;
   -ms-flex-preferred-size: 27.8%;
       flex-basis: 27.8%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.login__register {
+  padding: 20px 10px 0px 10px;
+  color: #fff;
+}
+
+.login .btn {
+  margin-bottom: 10px;
 }
 
 /** 
@@ -4743,7 +4759,7 @@ body::after {
 
 .form__field {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.2em;
   line-height: 20px;
   display: inline-block;
   padding: 0 8px;
@@ -4830,6 +4846,10 @@ body::after {
 
 .btn--full {
   width: 100%;
+}
+
+.btn--inline {
+  width: auto;
 }
 
 .btn--small {

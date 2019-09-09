@@ -57,6 +57,10 @@ $text-on-light: $secondary;
         width: 100%;
     }
 
+    &--inline{
+        width: auto;
+    }
+
     &--small{    
         padding: 0 18px;
         margin-right: 18px;

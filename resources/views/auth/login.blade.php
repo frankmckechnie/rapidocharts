@@ -9,7 +9,10 @@
 
         <div class="login__wrapper">
 
-            <div class="login__heading"><h1>Login</h1></div>
+            <div class="login__heading">
+                <h1>Login</h1>
+                <p class='login__register'>Necesicto a rapidocharts account? <a class='btn btn--link btn--small-text' href="{{ route('register') }}">Create an account</a></p>
+            </div>
 
             <div class="login__body">
                 <form id='login-form' method="POST" action="{{ route('login') }}">
@@ -56,7 +59,7 @@
                                 Let me in!
                             </button>
 
-                            <a class="btn btn--link btn--full btn--small-text" href="{{ route('password.request') }}">
+                            <a class="btn btn--link btn--full btn--small-text login__btn" href="{{ route('password.request') }}">
                                 Forgot Your Password?
                             </a>
                         </div>

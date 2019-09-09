@@ -63747,6 +63747,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "callout"
@@ -63768,7 +63770,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "callout" }, [
-      _c("div", { staticClass: "logo" })
+      _c("div", { staticClass: "callout__logo" }, [
+        _c("a", { staticClass: "callout__link", attrs: { href: "/" } })
+      ])
     ])
   }
 ]

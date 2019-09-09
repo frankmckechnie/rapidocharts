@@ -1,6 +1,8 @@
 <template>
   <div class="callout">
-    <div class="logo"></div>
+    <div class="callout__logo">
+      <a class="callout__link" href="/"></a>
+    </div>
   </div>
 </template>
 

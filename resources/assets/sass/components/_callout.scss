@@ -3,7 +3,9 @@
  */
 
 .callout {
+    $self: &;
     width: 100%;
+    position: relative;
     margin-bottom: 0px;
     position: relative;
     overflow: auto;
@@ -11,11 +13,11 @@
     -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
     transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 
-    .logo {
+    &__logo {
         background: url('../icons/logo.svg') no-repeat;
     }
 
-    .logo {
+    &__logo {
         position: absolute;
         left: 0;
         right: 0;
@@ -44,6 +46,12 @@
 
     }
 
+    &__link{
+        position: absolute;
+        top:0;left:0;right:0;bottom:0;
+    }
+
+
     .text-left,
     .text-right {
         position: absolute;
@@ -69,7 +77,7 @@
 
     &--medium{
         margin-top: 40px;
-        .logo{
+        #{$self}__logo{
             background-size: 35%;
         }
     }

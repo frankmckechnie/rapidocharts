@@ -12,21 +12,28 @@
         flex-flow: column;
         align-items: center;
         width: 100%;
-        padding: 80px;
     }
 
     &__wrapper{
         max-width: 480px;
-        //background-color: $secondary;
+        width: 100%;
         padding: 0px 20px;
-        @include box-shadow(0, 1px, 2px, rgba(0,0,0,0.07), false)
+        //@include box-shadow(0, 1px, 2px, rgba(0,0,0,0.07), false)
     }
 
     &__heading {
         color: $primary;
         text-align: center;
         flex-basis: 27.8%;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
+    &__register{
+        padding: 20px 10px 0px 10px;
+        color: $text-on-dark;
+    }
+
+    .btn{
+        margin-bottom: 10px;
+    }
 }
