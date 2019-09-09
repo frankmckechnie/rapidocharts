@@ -1,0 +1,39 @@
+/** 
+ *  register 
+ */
+
+.register {
+
+    color: $text-on-dark;
+
+    .register-container {
+        @include container();
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__wrapper{
+        max-width: 480px;
+        width: 100%;
+        padding: 0px 20px;
+        //@include box-shadow(0, 1px, 2px, rgba(0,0,0,0.07), false)
+    }
+
+    &__heading {
+        color: $primary;
+        text-align: center;
+        flex-basis: 27.8%;
+        margin-bottom: 30px;
+    }
+
+    &__login{
+        padding: 20px 10px 0px 10px;
+        color: $text-on-dark;
+    }
+
+    .btn{
+        margin-bottom: 10px;
+    }
+}

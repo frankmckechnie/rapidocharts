@@ -11,7 +11,7 @@
 
             <div class="login__heading">
                 <h1>Login</h1>
-                <p class='login__register'>Necesicto a rapidocharts account? <a class='btn btn--link btn--small-text' href="{{ route('register') }}">Create an account</a></p>
+                <p class='login__register'>Necesictas una rapidocharts account? <a class='btn btn--link btn--small-text' href="{{ route('register') }}">Create an account</a></p>
             </div>
 
             <div class="login__body">

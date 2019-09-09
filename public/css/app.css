@@ -4737,6 +4737,94 @@ body::after {
 }
 
 /** 
+ *  register 
+ */
+
+.register {
+  color: #fff;
+}
+
+.register .register-container {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+  z-index: 1;
+  width: 92%;
+  max-width: 1400px;
+  margin: 30px auto 0px auto;
+  padding: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+  transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .register .register-container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .register .register-container {
+    max-width: 562px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .register .register-container {
+    width: 92%;
+    max-width: 100%;
+    margin: 30px auto 10px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .register .register-container {
+    width: 92%;
+    max-width: 100%;
+    margin: 30px auto 10px auto;
+  }
+}
+
+.register__wrapper {
+  max-width: 480px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.register__heading {
+  color: #FCD577;
+  text-align: center;
+  -ms-flex-preferred-size: 27.8%;
+      flex-basis: 27.8%;
+  margin-bottom: 30px;
+}
+
+.register__login {
+  padding: 20px 10px 0px 10px;
+  color: #fff;
+}
+
+.register .btn {
+  margin-bottom: 10px;
+}
+
+/** 
  *  Charts
  */
 
