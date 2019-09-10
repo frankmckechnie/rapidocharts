@@ -21,7 +21,7 @@
                     <div class="form__group{{ $errors->has('name') ? ' has-error' : '' }}">
                         <label for="name" class="form__label">Name</label>
 
-                            <input id="name" type="text" class="form__field" name="name" value="{{ old('name') }}"
+                            <input id="name" type="text" class="form__field form__field--big" name="name" value="{{ old('name') }}"
                                 required autofocus>
 
                             @if ($errors->has('name'))
@@ -34,7 +34,7 @@
                     <div class="form__group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="email" class="form__label">E-Mail Address</label>
 
-                        <input id="email" type="email" class="form__field" name="email" value="{{ old('email') }}"
+                        <input id="email" type="email" class="form__field form__field--big" name="email" value="{{ old('email') }}"
                             required>
 
                         @if ($errors->has('email'))
@@ -47,7 +47,7 @@
                     <div class="form__group{{ $errors->has('password') ? ' has-error' : '' }}">
                         <label for="password" class="form__label">Password</label>
 
-                        <input id="password" type="password" class="form__field" name="password" required>
+                        <input id="password" type="password" class="form__field form__field--big" name="password" required>
 
                         @if ($errors->has('password'))
                         <span class="help-block">
@@ -59,7 +59,7 @@
                     <div class="form__group">
                         <label for="password-confirm" class="form__label">Confirm Password</label>
 
-                        <input id="password-confirm" type="password" class="form__field" name="password_confirmation"
+                        <input id="password-confirm" type="password" class="form__field form__field--big" name="password_confirmation"
                             required>
                     </div>
 
