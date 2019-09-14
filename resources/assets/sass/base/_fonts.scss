@@ -8,6 +8,14 @@ $letter-spacing: auto;
 $font-weight: 400px;
 $line-height: 24px;
 
+a{
+    color: $primary;
+    text-decoration: none;
+    &:hover{
+        color: $text-on-dark;
+    }
+}
+
 
 body,
 caption,
@@ -26,6 +34,7 @@ h4,
 h5,
 h6 {
     font-size-adjust: 0.5;
+    padding: 0.5em 0;
 }
 
 #page {

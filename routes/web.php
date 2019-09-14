@@ -13,5 +13,8 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/standard/{url?}', 'StandardContentController@index')->name('StandardContent');
+
+
 Auth::routes();
 

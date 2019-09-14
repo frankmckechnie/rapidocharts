@@ -75,6 +75,10 @@ $text-on-light: $secondary;
         background-color: $primary;
     }
 
+    &--no-padding {
+        padding: 0;
+    }
+
     &--link{
         background: transparent;
         &:hover{
