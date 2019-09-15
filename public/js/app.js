@@ -89405,10 +89405,11 @@ return jsc.jscolor;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_callout__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_callout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layout_callout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_navigation__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__layout_navigation__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_clock__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_callout__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_callout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__layout_callout__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__layout_navigation__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__layout_navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__layout_navigation__);
 /**
  * All global compoents
  */
@@ -89418,8 +89419,10 @@ return jsc.jscolor;
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('callout', __WEBPACK_IMPORTED_MODULE_1__layout_callout___default.a);
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('navigation', __WEBPACK_IMPORTED_MODULE_2__layout_navigation___default.a);
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('callout', __WEBPACK_IMPORTED_MODULE_2__layout_callout___default.a);
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('navigation', __WEBPACK_IMPORTED_MODULE_3__layout_navigation___default.a);
 
 /* unused harmony default export */ var _unused_webpack_default_export = ({});
 
@@ -89520,6 +89523,99 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Simple clock class
+ */
+
+var Clock = function () {
+    function Clock(minuteHand, hourHand) {
+        _classCallCheck(this, Clock);
+
+        //this.hands = document.querySelectorAll('.hand');
+        //this.secondHand = document.querySelector('.second-hand');
+        this.minuteHand = document.querySelector(minuteHand);
+        this.hourHand = document.querySelector(hourHand);
+        this.debug = false;
+    }
+
+    _createClass(Clock, [{
+        key: "setDebug",
+        value: function setDebug(bool) {
+            this.debug = bool;
+        }
+    }, {
+        key: "start",
+        value: function start() {
+            setInterval(this.setDate(), 1000);
+        }
+    }, {
+        key: "setDate",
+        value: function setDate() {
+            var now = new Date();
+            var second = now.getSeconds();
+            var secondsDegress = second / 60 * 360 + 90;
+
+            for (var i = 0; i < hands.length; ++i) {
+                if (second == 0) {
+                    hands[i].style.transition = "0s";
+                    this.debug ? console.log(hands[i].style) : '';
+                } else {
+                    if (hands[i].style.transition == "0s") {
+                        hands[i].style.transition = "all 0.5s";
+                    }
+                }
+            }
+
+            var minute = now.getMinutes();
+            var minuteDegress = minute / 60 * 360 + 90;
+
+            var hour = now.getHours();
+            var hourDegress = hour / 24 * 360 + 90;
+
+            //secondHand.style.transform = `rotate(${secondsDegress}deg)`;
+            minuteHand.style.transform = "rotate(" + minuteDegress + "deg)";
+            hourHand.style.transform = "rotate(" + hourDegress + "deg)";
+        }
+    }]);
+
+    return Clock;
+}();
+
+/* unused harmony default export */ var _unused_webpack_default_export = (Clock);
 
 /***/ })
 /******/ ]);

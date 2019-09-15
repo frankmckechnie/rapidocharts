@@ -15,7 +15,9 @@
                 <div class="register__heading">
                     <h1>What you waiting for?</h1>
                     <p class='register__text'>
-                        Register today and see what RapidoCharts can offer you!
+                        Register today and see what RapidoCharts can offer you! <br/> Already have an account? <a
+                        class='btn btn--link btn--small-text btn--no-padding'
+                        href="{{ route('login') }}">Login</a>
                     </p>
                 </div>
 
@@ -69,26 +71,30 @@
                                 name="password_confirmation" required>
                         </div>
 
-                        <div class="form__group">
+                        <div class="form__group form__group--row">
                             <div class="form__cell">
 
                                 <button type="submit" class="btn btn--inverse ">
-                                    Register
+                                    Listo!
                                 </button>
                             </div>
                             <div class="form__cell">
                                 <p class="register__text">
-                                      
-                                    By clicking the "lesto!" button, you are creating a RapidoCharts account, and you
+                                    By clicking the "Listo!" button, you are creating a RapidoCharts account, and you
                                     agree to RapidoChart's
-                                    <a class="btn btn--link btn--small-text btn--no-padding" href="{{url('standard/terms')}}" rel="noopener noreferrer">Terms of
-                                        Use</a> and <a class="btn btn--link btn--no-padding btn--small-text" href="{{url('standard/policy')}}" 
-                                        rel="noopener noreferrer">Privacy Policy</a>.</p>
+                                    <a class="btn btn--link btn--small-text btn--no-padding"
+                                        href="{{url('standard/terms')}}" rel="noopener noreferrer">Terms of
+                                        Use</a> and <a class="btn btn--link btn--no-padding btn--small-text"
+                                        href="{{url('standard/policy')}}" rel="noopener noreferrer">Privacy Policy</a>.
+                                         
+                                </p>
+                             
                             </div>
 
-                            <p class="register__text">  Allready have an account <a class='btn btn--link btn--small-text btn--no-padding'
-                                href="{{ route('login') }}">Login?</a></p>
+
                         </div>
+
+
                     </form>
                 </div>
             </div>

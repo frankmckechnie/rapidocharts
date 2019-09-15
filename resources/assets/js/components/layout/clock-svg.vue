@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="275px"
+
+<template>
+  <div class="svg-clock">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="275px"
 	 height="480px" viewBox="0 0 275 480" enable-background="new 0 0 275 480" xml:space="preserve">
 <g id="Layer_1" display="none">
 	<g display="inline">
@@ -167,3 +167,22 @@
 	</g>
 </g>
 </svg>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "svg-clock",
+  data: () => {
+      return {
+          path: '/fonts/logo-timer.svg'
+      }
+  },
+  created(){
+      console.log('I was created');
+
+      let clock = new Clock('.minute','.hour');
+  }
+};
+</script>

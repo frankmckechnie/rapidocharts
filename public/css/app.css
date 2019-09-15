@@ -4276,6 +4276,7 @@ body::after {
   position: relative;
   overflow: auto;
   min-height: 155px;
+  cursor: pointer;
   -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
   transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 }
@@ -5132,7 +5133,7 @@ body::after {
 }
 
 .register__logo {
-  background: url(/fonts/logo-timer.svg?992c2c680cc73f64b45629c86e296a13) no-repeat;
+  background: url(/fonts/logo-timer.svg?860fda739db831a9eaa5532edebca974) no-repeat;
 }
 
 .register__logo {
@@ -5151,7 +5152,7 @@ body::after {
 
 .register__text {
   text-align: left;
-  padding: 20px 10px 0px 10px;
+  padding: 0px 0px 0px 0px;
   color: #fff;
 }
 
@@ -5164,8 +5165,30 @@ body::after {
  */
 
 .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   width: 100%;
   position: relative;
+}
+
+.form__group--row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.form__cell {
+  padding-right: 15px;
+}
+
+.form__cell:last-child {
+  padding-right: 0;
 }
 
 .form__label {
@@ -5208,16 +5231,6 @@ body::after {
 .form__field--big {
   padding: 0 15px;
   min-height: 52px;
-}
-
-.form__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
 }
 
 .form__checkbox {
