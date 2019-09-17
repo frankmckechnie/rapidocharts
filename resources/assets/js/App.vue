@@ -4,7 +4,7 @@
     <callout></callout>
     
     <navigation>
-        <li><a href='/register'>Sign-up</a></li>
+        <li><a href='/register'>Register</a></li>
         <li><a href='/login'>Login</a></li>
     </navigation>
 

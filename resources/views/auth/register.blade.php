@@ -8,6 +8,9 @@
         <div class="register__wrapper grid grid--gutters">
             <div class="grid-cell grid-cell--1of3">
                 <div class="register__logo">
+                    <a href="/">
+                            <img src="{{asset('fonts/logo-timer.svg')}}" alt="">
+                    </a>
                 </div>
             </div>
 

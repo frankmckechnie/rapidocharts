@@ -81,9 +81,7 @@ $gutterLarge: 25px;
   }
 }
 
-
-
-@media (--break-sm) {
+@media (min-width: $break-mobile) {
   .small-grid--fit>.grid-cell {
     flex: 1;
   }
@@ -105,7 +103,7 @@ $gutterLarge: 25px;
   }
 }
 
-@media (--break-md) {
+@media (min-width: $break-tablet) {
   .med-grid--fit>.grid-cell {
     flex: 1;
   }
@@ -127,7 +125,7 @@ $gutterLarge: 25px;
   }
 }
 
-@media (--break-lg) {
+@media (min-width: $break-min-desktop) {
   .large-grid--fit>.grid-cell {
     flex: 1;
   }

@@ -3780,7 +3780,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 481px) {
   .container {
     width: 92%;
     max-width: 100%;
@@ -3916,7 +3916,7 @@ body::after {
           flex: 0 0 25%;
 }
 
-@media (--break-sm) {
+@media (min-width: 481px) {
   .small-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -3948,7 +3948,7 @@ body::after {
   }
 }
 
-@media (--break-md) {
+@media (min-width: 630px) {
   .med-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -3980,7 +3980,7 @@ body::after {
   }
 }
 
-@media (--break-lg) {
+@media (min-width: 1000px) {
   .large-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -4381,7 +4381,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 481px) {
   .callout--container {
     width: 92%;
     max-width: 100%;
@@ -5030,7 +5030,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 481px) {
   .login .login-container {
     width: 92%;
     max-width: 100%;
@@ -5119,7 +5119,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 481px) {
   .register .register-container {
     width: 92%;
     max-width: 100%;
@@ -5133,13 +5133,17 @@ body::after {
 }
 
 .register__logo {
-  background: url(/fonts/logo-timer.svg?860fda739db831a9eaa5532edebca974) no-repeat;
-}
-
-.register__logo {
   width: 100%;
   height: 100%;
   background-position: center top;
+}
+
+.register__logo img {
+  width: 100%;
+  height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .register__heading {
@@ -5295,7 +5299,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 481px) {
   .standard-content .standard-content-container {
     width: 92%;
     max-width: 100%;
