@@ -5,7 +5,7 @@
 
 <div class="register">
     <div class="register-container">
-        <div class="register__wrapper grid grid--gutters">
+        <div class="register__wrapper grid grid--gutters med-grid--fit">
             <div class="grid-cell grid-cell--1of3">
                 <div class="register__logo">
                     <a href="/">

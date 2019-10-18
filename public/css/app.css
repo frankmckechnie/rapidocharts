@@ -3539,6 +3539,30 @@ table {
   font-size: 0px !important;
 }
 
+@-webkit-keyframes hoverBounce {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+@keyframes hoverBounce {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
 /* fonts */
 
 a {
@@ -3780,7 +3804,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 380px) {
   .container {
     width: 92%;
     max-width: 100%;
@@ -3916,7 +3940,7 @@ body::after {
           flex: 0 0 25%;
 }
 
-@media (min-width: 481px) {
+@media (max-width: 380px) {
   .small-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -3948,7 +3972,7 @@ body::after {
   }
 }
 
-@media (min-width: 630px) {
+@media (max-width: 630px) {
   .med-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -3980,7 +4004,7 @@ body::after {
   }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .large-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -4281,6 +4305,11 @@ body::after {
   transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 }
 
+.callout:hover {
+  -webkit-animation: hoverBounce 2s infinite ease-out;
+  animation: hoverBounce 2s infinite ease-out;
+}
+
 .callout__logo {
   background: url(/fonts/logo.svg?d241ede3b85d592bf84173790f0aaf4a) no-repeat;
 }
@@ -4381,7 +4410,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 380px) {
   .callout--container {
     width: 92%;
     max-width: 100%;
@@ -5030,7 +5059,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 380px) {
   .login .login-container {
     width: 92%;
     max-width: 100%;
@@ -5119,7 +5148,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 380px) {
   .register .register-container {
     width: 92%;
     max-width: 100%;
@@ -5144,6 +5173,11 @@ body::after {
   position: -webkit-sticky;
   position: sticky;
   top: 20px;
+}
+
+.register__logo:hover {
+  -webkit-animation: hoverBounce 2s infinite ease-out;
+  animation: hoverBounce 2s infinite ease-out;
 }
 
 .register__heading {
@@ -5299,7 +5333,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 380px) {
   .standard-content .standard-content-container {
     width: 92%;
     max-width: 100%;

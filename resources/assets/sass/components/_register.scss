@@ -30,6 +30,11 @@
             position: sticky;
             top: 20px;
         }
+
+        &:hover{
+            -webkit-animation: hoverBounce 2s infinite ease-out;
+            animation: hoverBounce 2s infinite ease-out
+        }
     }
 
     &__heading {
