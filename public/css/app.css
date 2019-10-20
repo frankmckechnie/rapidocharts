@@ -3816,7 +3816,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .container {
     width: 92%;
     max-width: 100%;
@@ -3952,7 +3952,7 @@ body::after {
           flex: 0 0 25%;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 411px) {
   .small-grid--fit > .grid-cell {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -4422,7 +4422,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .callout--container {
     width: 92%;
     max-width: 100%;
@@ -5073,7 +5073,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .login .login-container {
     width: 92%;
     max-width: 100%;
@@ -5088,7 +5088,7 @@ body::after {
   padding: 0px 20px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .login__wrapper {
     padding: 0 5px;
   }
@@ -5102,7 +5102,7 @@ body::after {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 381px) {
+@media screen and (max-width: 412px) {
   .login__heading {
     margin-top: -20px;
   }
@@ -5179,7 +5179,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .register .register-container {
     width: 92%;
     max-width: 100%;
@@ -5260,7 +5260,7 @@ body::after {
           flex-flow: row;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 411px) {
   .form__group--md-col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5277,7 +5277,7 @@ body::after {
   padding-right: 0;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 411px) {
   .form__cell-md--full {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -5392,7 +5392,7 @@ body::after {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .standard-content .standard-content-container {
     width: 92%;
     max-width: 100%;
@@ -5406,7 +5406,7 @@ body::after {
   padding: 0px 20px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .standard-content__wrapper {
     padding: 0 5px;
   }
