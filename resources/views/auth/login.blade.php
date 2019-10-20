@@ -23,7 +23,7 @@
                         <div class="form__group{{ $errors->has('email') ? ' form__group--error' : '' }}">
                             <label for="email" class="form__label">E-Mail Address</label>
 
-                            <input id="email" type="email" class="form__field form__field--big" name="email" value="{{ old('email') }}"
+                            <input id="email" type="email" class="form__field form__field--big" name="email" autocomplete="off" value="{{ old('email') }}"
                                 required autofocus>
 
                             @if ($errors->has('email'))

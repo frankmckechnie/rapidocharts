@@ -5,8 +5,8 @@
 
 <div class="register">
     <div class="register-container">
-        <div class="register__wrapper grid grid--gutters med-grid--fit">
-            <div class="grid-cell grid-cell--1of3">
+        <div class="register__wrapper grid grid--gutters med-grid--full">
+            <div class="grid-cell grid-cell--1of4">
                 <div class="register__logo">
                     <a href="/">
                             <img src="{{asset('fonts/logo-timer.svg')}}" alt="">
@@ -74,14 +74,14 @@
                                 name="password_confirmation" required>
                         </div>
 
-                        <div class="form__group form__group--row">
-                            <div class="form__cell">
+                        <div class="form__group form__group--row  form__group--md-col">
+                            <div class="form__cell form__cell-md--full">
 
                                 <button type="submit" class="btn btn--inverse ">
                                     Listo!
                                 </button>
                             </div>
-                            <div class="form__cell">
+                            <div class="form__cell form__cell-md--full">
                                 <p class="register__text">
                                     By clicking the "Listo!" button, you are creating a RapidoCharts account, and you
                                     agree to RapidoChart's
