@@ -64309,7 +64309,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     inputColor: function inputColor(color) {
       var ary = this.colors;
-      ary[this.item - 1] = "#" + color;
+      ary[this.item - 1] = color.indexOf('#') > -1 ? color : "#" + color;
       this.$emit("update-field", this.version, "backgroundColor", ary);
     }
   },
